@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300;500&display=swap');
+
+:root {
+    --cor-principal: #1c1c1c;
+    --cor-secundaria: #22fd97;
+    --cor-terciaria: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color:var(--cor-principal);
+    color:ghostwhite;
+}
+
+.cabecalho{
+    background-color:var(--cor-secundaria);
+    padding: 1.8%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecalho__menu__botaohome{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-image: url("/assets/pasta.png");
+    width: 32px;
+    height: 32px;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.cabecalho__menu__botaohome2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url("/assets/2pasta.png");
+    width: 32px;
+    height: 32px;
+    overflow:hidden;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+
+.cabecalho__menu__botaohome:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.cabecalho__menu__botaohome2:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem; 
+    font-weight: 600;
+    text-align: center;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.cabecalho__menu__link:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: white;
+}
+
+.apresentacao {
+    padding: 5% 2% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6.5%;
+}
+.apresentacao__conteudo {
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 23px;
+    padding: 1%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+}
+
+.txth1 {
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.125rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.caian_quirino {
+    width: 21%;
+}
+
+.caian_quirino img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.caian_quirino:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apresentacao__links__botao{
+    background-image: url("/assets/logoin.png");
+    width: 20%;
+    height: 33px;
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+    overflow: hidden;
+    border: 1px solid #0464a4;
+}
+
+.apresentacao__links__botao:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.apresentacao__links__botao2{
+    background-image: url("/assets/logohub.png");
+    width: 20%;
+    height: 33px;
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+}
+
+.apresentacao__links__botao2:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.barralateral{
+    position:absolute;
+    right: 3%;
+    background-color: var(--cor-terciaria);
+    width: 11%;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 1%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10%;
+    flex-direction: column;
+}
+.p1{
+    text-decoration: none;
+    color:white;
+}
+
+.rodape {
+    padding: 24px;
+    color:var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.projetos{
+    padding: 5% 2% 8%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.projetos__conteudo{
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 23px;
+    padding: 1% 0% 2%;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projetos__titulo{
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.projetos__texto{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+}
+.projetos__strong{
+    color: var(--cor-secundaria);
+}
+.scratch__link{
+    text-decoration: none;
+}
+.projetos__link{
+    text-decoration: none;
+    color:var(--cor-secundaria);
+}
+
+.projetos__gif{
+    width:50%;
+    border:2px solid #22fd97;
+    border-radius: 5px;
+}
+
+.topo{
+    background-image: url("/assets/topo.png");
+    padding: 1px 0px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid white;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.topo::after{
+    transition: margin-top 500ms;
+}
+.topo:hover::after{
+    margin-top:-8px;
+}
+
+.topo:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@media (max-width: 700px) {
+    .cabecalho{
+        padding: 4%;
+    }
+    .cabecalho__menu__botaohome2{
+        visibility: hidden;
+    }
+    .cabecalho__menu__botaohome{
+        visibility: hidden;
+    }
+    .caian_quirino{
+        width: auto;
+    }
+    .barralateral{
+        visibility: hidden;
+    }
+    .apresentacao{
+        align-items: center;
+    }
+    .apresentacao__conteudo{
+        width:auto;
+    }
+    .projetos__conteudo{
+        width:auto;
+    }
+}

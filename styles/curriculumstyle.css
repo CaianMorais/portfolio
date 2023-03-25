@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300;500&display=swap');
+
+:root {
+    --cor-principal: #1c1c1c;
+    --cor-secundaria: #22fd97;
+    --cor-terciaria: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+    color:ghostwhite;
+}
+
+.cabecalho{
+    background-color:#22fd97;
+    padding: 1.8%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecalho__menu__botaohome{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-image: url("/assets/pasta.png");
+    width: 32px;
+    height: 32px;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.cabecalho__menu__botaohome2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url("/assets/2pasta.png");
+    width: 32px;
+    height: 32px;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+
+.cabecalho__menu__botaohome:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.cabecalho__menu__botaohome2:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: center;
+    color:#000;
+    text-decoration: none;
+    overflow: visible;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.cabecalho__menu__link:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: white;
+}
+
+.apresentacao {
+    padding: 5% 2% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4%;
+}
+.apresentacao__conteudo {
+    background-color: black;
+    border: 2px solid #22fd97;
+    border-radius: 23px;
+    padding: 1%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+}
+
+.txth1 {
+    color: #22fd97;
+}
+
+.apresentacao__conteudo__titulo2{
+    font-size: 2rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 600;
+    text-align: flex-start;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.125rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-align: flex-start;
+    flex-wrap:wrap;
+    text-decoration:none;
+}
+
+.infoatt{
+    background-color: #000;
+    padding: 0.3%;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: light;
+    position: absolute;
+    top: 1580px;
+    right: 150px;
+}
+
+.caian_quirino {
+    width: 28%;
+}
+
+.caian_quirino img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+}
+.caian_quirino:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apresentacao__links__botao{
+    background-image: url("/assets/logoin.png");
+    width: 127px;
+    height: 33px;
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s ease;
+    overflow: hidden;
+    border: 1px solid #0464a4;
+}
+
+.apresentacao__links__botao:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.apresentacao__links__botao2{
+    background-image: url("/assets/logohub.png");
+    width: 126px;
+    height: 33px;
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform .7s ease;
+    transition: transform .7s;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+}
+
+.apresentacao__links__botao2:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.barralateral{
+    background-color: black;
+    width: 170px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 1%;
+    border: 2px solid #22fd97;
+    border-radius: 10%;
+    flex-direction: column;
+}
+
+.rodape {
+    padding: 24px;
+    color:#000;
+    background-color: #22fd97;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .cabecalho{
+        padding: 4%;
+    }
+    .cabecalho__menu__botaohome2{
+        visibility: hidden;
+    }
+    .cabecalho__menu__botaohome{
+        visibility: hidden;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .apresentacao__conteudo{
+        width:auto;
+    }
+    .caian_quirino{
+        width: 31%;
+        padding: 5% 0% 0%;
+    }
+    .infoatt{
+        visibility: hidden;
+    }
+}
