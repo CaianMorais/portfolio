@@ -287,13 +287,15 @@ body {
         visibility: hidden;
     }
     .caian_quirino{
-        width: auto;
+        width: 300px;
     }
     .barralateral{
         visibility: hidden;
     }
     .apresentacao{
+        flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
     .apresentacao__conteudo{
         width:auto;
