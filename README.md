@@ -5,7 +5,7 @@
 Esse é meu portfólio que desenvolvi numa página WEB com conhecimentos obttidos no curso de HTML e CSS da Alura.<br> Vou atualizar a cada projeto que eu desenvolver e colocar no site para complementar a página e apresentar meus aprendizados e técnicas aplicadas nos meus projetos. O site foi totalmente criado e estilizado para ser aberto em browser de computador e dispositivos móveis. (Talvez encontre alguns bugs no site por conta que muitos do HTML e CSS não aprendi até tal momento do curso e realizei algumas pesquisas para implementar ferramentas visuais à página WEB.
 
 ## :link: Acesse o portfolio online:
-* <a href ="encr.pw/caianportfolio"> Clique aqui</a>
+* <a href ="https://portfolio-one-phi-36.vercel.app/"> Clique aqui</a>
 
 ## :wrench: Ferramentas utlizadas:
 
