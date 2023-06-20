@@ -129,9 +129,8 @@ body {
     font-size: 0.9375rem;
     font-family: 'Sofia Sans Condensed', sans-serif;
     font-weight: light;
-    position: absolute;
-    top: 1560px;
-    right: 150px;
+    text-align:center;
+    font-size: 20px;
 }
 
 .caian_quirino {
@@ -229,8 +228,5 @@ body {
     .caian_quirino{
         width: 31%;
         padding: 5% 0% 0%;
-    }
-    .infoatt{
-        visibility: hidden;
     }
 }
